@@ -27,8 +27,8 @@ class Ingredients(BaseModel):
 class Recipe(BaseModel):
     model_config = ConfigDict(coerce_numbers_to_str=True)
     dish_name: str
-    difficulty: str
-    prep_time: str
+    difficulty: Optional[str] = None  # 可选字段，RAG 接口不提供
+    prep_time: Optional[str] = None  # 可选字段，RAG 接口不提供
     tags: List[str]
     nutrition: Nutrition
     ingredients: Ingredients

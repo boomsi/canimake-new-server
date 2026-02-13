@@ -3,3 +3,8 @@ uvicorn
 openai
 python-dotenv
 pydantic-settings
+langchain
+langchain-community
+langchain-openai
+chromadb
+dashscope

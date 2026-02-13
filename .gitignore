@@ -7,3 +7,6 @@ venv/
 .vscode/
 .idea/
 *.log
+.venv/
+dataset/recipe_corpus_full.json
+./data
